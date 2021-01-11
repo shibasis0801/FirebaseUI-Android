@@ -25,6 +25,7 @@ import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.util.ExtraConstants;
 import com.firebase.uidemo.auth.AnonymousUpgradeActivity;
 import com.firebase.uidemo.auth.AuthUiActivity;
+import com.firebase.uidemo.compose.ComposeActivity;
 import com.firebase.uidemo.database.firestore.FirestoreChatActivity;
 import com.firebase.uidemo.database.firestore.FirestorePagingActivity;
 import com.firebase.uidemo.database.realtime.FirebaseDbPagingActivity;
@@ -74,6 +75,7 @@ public class ChooserActivity extends AppCompatActivity {
                 RealtimeDbChatActivity.class,
                 FirebaseDbPagingActivity.class,
                 ImageActivity.class,
+                ComposeActivity.class
         };
 
         private static final int[] DESCRIPTION_NAMES = new int[]{
@@ -83,7 +85,8 @@ public class ChooserActivity extends AppCompatActivity {
                 R.string.title_firestore_paging_activity,
                 R.string.title_realtime_database_activity,
                 R.string.title_realtime_database_paging_activity,
-                R.string.title_storage_activity
+                R.string.title_storage_activity,
+                R.string.title_compose_activity
         };
 
         private static final int[] DESCRIPTION_IDS = new int[]{
@@ -93,7 +96,8 @@ public class ChooserActivity extends AppCompatActivity {
                 R.string.desc_firestore_paging,
                 R.string.desc_realtime_database,
                 R.string.desc_realtime_database_paging,
-                R.string.desc_storage
+                R.string.desc_storage,
+                R.string.desc_compose
         };
 
         @Override

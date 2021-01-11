@@ -1,2 +1,9 @@
-// This empty file along with settings.gradle help Android Studio recognize the project
+buildscript {
+    ext {
+        kotlin_version = '1.4.21'
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}// This empty file along with settings.gradle help Android Studio recognize the project
 // as a gradle project, despite the use of .gradle.kts scripts.

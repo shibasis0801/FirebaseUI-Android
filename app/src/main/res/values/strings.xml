@@ -8,6 +8,7 @@
     <string name="title_realtime_database_activity">Realtime Database Demo</string>
     <string name="title_realtime_database_paging_activity">Realtime Database Paging Demo</string>
     <string name="title_storage_activity">Storage Image Demo</string>
+    <string name="title_compose_activity">Storage Image Demo</string>
 
     <string name="desc_auth">Demonstrates the Firebase Auth UI flow, with customization options.</string>
     <string name="desc_anonymous_upgrade">Demonstrates upgrading an anonymous account using FirebaseUI.</string>
@@ -16,6 +17,7 @@
     <string name="desc_realtime_database">Demonstrates using a FirebaseRecyclerAdapter to load data from Firebase Database into a RecyclerView for a basic chat app.</string>
     <string name="desc_realtime_database_paging">Demonstrates using a FirebaseRecyclerPagingAdapter to load/infinite scroll paged data from Firebase Realtime Database.</string>
     <string name="desc_storage">Demonstrates displaying an image from Cloud Storage using Glide.</string>
+    <string name="desc_compose">Demonstrates using Jetpack Compose.</string>
 
     <!-- Auth UI -->
     <string name="launch_title">FirebaseUI Auth Demo</string>

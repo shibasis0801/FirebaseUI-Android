@@ -1,5 +1,6 @@
 // NOTE: this project uses Gradle Kotlin DSL. More common build.gradle instructions can be found in
 // the main README.
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 android {
     defaultConfig {
@@ -26,8 +27,21 @@ android {
     }
 
     compileOptions {
-        setSourceCompatibility(JavaVersion.VERSION_1_8)
-        setTargetCompatibility(JavaVersion.VERSION_1_8)
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+
+    tasks.withType<KotlinCompile> {
+        kotlinOptions {
+            jvmTarget = "1.8"
+            useIR = true
+        }
+    }
+
+    composeOptions {
+        kotlinCompilerVersion = "1.4.20"
+        kotlinCompilerExtensionVersion = "1.0.0-alpha08"
     }
 }
 
@@ -39,6 +53,7 @@ dependencies {
     implementation(project(":firestore"))
     implementation(project(":database"))
     implementation(project(":storage"))
+    api(project(":compose"))
 
     implementation(Config.Libs.Provider.facebook)
     // Needed to override Facebook
@@ -65,3 +80,4 @@ dependencies {
 }
 
 apply(plugin = "com.google.gms.google-services")
+apply(plugin = "kotlin-android")

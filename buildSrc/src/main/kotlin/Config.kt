@@ -2,16 +2,17 @@ object Config {
     const val version = "7.1.1"
     val submodules = listOf("auth", "common", "firestore", "database", "storage")
 
-    private const val kotlinVersion = "1.3.72"
+    private const val kotlinVersion = "1.4.20"
 
     object SdkVersions {
         const val compile = 29
         const val target = 29
         const val min = 16
+        const val minCompose = 21
     }
 
     object Plugins {
-        const val android = "com.android.tools.build:gradle:4.0.0"
+        const val android = "com.android.tools.build:gradle:4.2.0-alpha16"
         const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
         const val google = "com.google.gms:google-services:4.3.3"
 

@@ -85,7 +85,8 @@ fun Project.configureAndroid() {
         compileSdkVersion(Config.SdkVersions.compile)
 
         defaultConfig {
-            minSdkVersion(Config.SdkVersions.min)
+//            Correct this
+            minSdkVersion(Config.SdkVersions.minCompose)
             targetSdkVersion(Config.SdkVersions.target)
 
             versionName = Config.version

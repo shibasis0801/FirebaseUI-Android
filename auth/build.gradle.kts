@@ -19,9 +19,9 @@ android {
     }
 
     testOptions {
-        unitTests(closureOf<TestOptions.UnitTestOptions> {
+        unitTests {
             isIncludeAndroidResources = true
-        })
+        }
     }
 }
 
